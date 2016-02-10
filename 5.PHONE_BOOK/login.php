@@ -1,7 +1,7 @@
 <?php 
 require_once './connection/connection.php' ; 
 if(isset($_POST['btnlogin'])){
-	$cuser 	= isset($_POST['cuser']) ? $_POST['cuser'] : "" ; 
+	$cuser 		= isset($_POST['cuser']) ? $_POST['cuser'] : "" ; 
 	$cpassword	= isset($_POST['cpassword']) ? $_POST['cpassword'] : "" ; 
 	$cpassword 	= md5($cpassword) ; //encryption standart password
 	

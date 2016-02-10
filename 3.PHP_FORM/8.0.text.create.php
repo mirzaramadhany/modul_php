@@ -34,9 +34,11 @@
 					$cdir 		= "./8.upload/" ;
 					$cisi		= isset($_POST['cisi']) ? $_POST['cisi'] : "" ; 
 					$cisi 		= $cisi !== "" ? $cisi : "Kosong" ; 
-					$cnamefile	= isset($_POST['cnamefile']) ? $_POST['cnamefile'] : time() ; /*jika tidak memiliki nama diberi waktu*/
+					/*jika tidak memiliki nama diberi waktu*/
+					$cnamefile	= isset($_POST['cnamefile']) ? $_POST['cnamefile'] : time() ; 
 					$cnamefile .= ".txt" ; 
-					$objfile 	= fopen($cdir. $cnamefile, "w") or die("Tidak dapat membuat file") ; //jika file tidak ditemukan maka akan membuat file
+					//jika file tidak ditemukan maka akan membuat file
+					$objfile 	= fopen($cdir. $cnamefile, "w") or die("Tidak dapat membuat file") ; 
 					fwrite($objfile, $cisi) ; 
 					fclose($objfile) ; 
 				}
@@ -51,7 +53,8 @@
 					    <label for="cisi">Isi File</label>
 					    <textarea class="form-control" name="cisi" id="cisi" rows="3"></textarea>
 					</div>
-					<button class="btn btn-primary pull-right" type="submit" name="btncreate" id="btncreate">Buat File</button>
+					<button class="btn btn-primary pull-right" type="submit" name="btncreate" 
+					id="btncreate">Buat File</button>
 				</form>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">

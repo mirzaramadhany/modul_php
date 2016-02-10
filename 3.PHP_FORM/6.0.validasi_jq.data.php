@@ -11,11 +11,13 @@
 				<form method="POST" action="./6.1.validasi_jq.action.php">
 					<div class="form-group"> 
 					    <label for="cnama">Nama</label>
-					    <input type="text" class="form-control" name="cnama" id="cnama" placeholder="Nama Anda" required autofocus>
+					    <input type="text" class="form-control" name="cnama" id="cnama" 
+					    placeholder="Nama Anda" required autofocus>
 					</div>
 					<div class="form-group">
 					    <label for="cemail">Email</label>
-					    <input type="text" class="form-control" name="cemail" id="cemail" required placeholder="Email Anda">
+					    <input type="text" class="form-control" name="cemail" id="cemail" 
+					    required placeholder="Email Anda">
 					</div>
 					<label>Jenis Kelamin</label>
 					<div class="form-group">
@@ -26,7 +28,8 @@
 							<input type="radio" name="optgender" id="optgenderP" value="P"> Wanita
 						</label>
 					</div>
-					<button class="btn btn-primary pull-right" type="submit" name="btnsimpan" id="btnsimpan">Simpan</button>
+					<button class="btn btn-primary pull-right" type="submit" 
+					name="btnsimpan" id="btnsimpan">Simpan</button>
 				</form>
 			</div>
 		</div>
